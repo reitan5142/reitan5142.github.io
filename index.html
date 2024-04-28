@@ -5,26 +5,99 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css" />
-    <link rel="stylesheet" href="style.css">
-    <title>れいたんのさいと！</title>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <title>SUPER ARUTAKA</title>
 </head>
 
 <body>
     <header>
-        <h1 class="logo">れいたんのさいとへようこそ!</h1>
+        <div class="logo">
+            <a href="ここを変更" target="_blank"></a><img class="logo" src="img/logo.png" alt="logo: すーぱーあるたか">
+        </div>
+        <h3>上のロゴを押すと新しいタブでツイートに飛びます（まだ飛びません）</h3>
+        <h2>カーソルからあるたかは逃げます。クリックすると出てきます。</h2>
+        <h1>スマホでも動きますが推奨はしません</h1>
     </header>
-    <main>
-        <nav>
-            <ul>
-                <li><a href="#">トップページ</a></li>
-                <li> / </li>
-                <li><a href="#">自己紹介</a></li>
-                <li> / </li>
-                <li><a href="#">ひとこと</a></li>
-            </ul>
-        </nav>
-        <h1>作成中です！</h1>
-    </main>
+    <div id="particles"></div>
+    <script src="particles.js"></script>
+    <script src="setting.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=M+PLUS+2:wght@100..900&display=swap');
+
+        body {
+            background-image: url(img/arutaka.png);
+            background-size: 90rem;
+            font-family: "Jost", "M PLUS 2";
+        }
+
+        header {
+            background-color: #ffffff50;
+            user-select: none;
+            -moz-user-select: none;
+            -webkit-user-select: none;
+            -ms-user-select: none;
+        }
+
+        header h3 {
+            font-size: 0rem;
+            transition: font-size 0.3s ease-in-out;
+        }
+
+        header:hover h3 {
+            font-size: 1rem;
+        }
+
+        header h2 {
+            font-size: 0rem;
+            transition: font-size 0.3s ease-in-out;
+        }
+
+        header:hover h2 {
+            font-size: 1rem;
+        }
+
+        header h1 {
+            font-size: 0rem;
+            transition: font-size 0.3s ease-out;
+        }
+
+        header:hover h1 {
+            font-size: 2rem;
+        }
+
+        header .logo .logo {
+            margin: auto;
+        }
+
+        header .logo {
+            margin: 1rem;
+            width: 15rem;
+            display: flex;
+            margin: auto;
+        }
+
+        header .logo .x {
+            margin-right: 2rem;
+            width: 2rem;
+            margin: 1rem;
+            display: flex;
+        }
+
+        header h1 {
+            display: flex;
+            justify-content: center;
+        }
+
+        header h2 {
+            display: flex;
+            justify-content: center;
+        }
+
+        header h3 {
+            display: flex;
+            justify-content: center;
+        }
+    </style>
 </body>
 
 </html>

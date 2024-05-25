@@ -76,7 +76,7 @@ main .self-introduction .description .row h3 {
     justify-content: center;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 834px) {
     header {
         border-bottom: var(--basecolor) solid 0.25rem;
     }
